@@ -82,7 +82,7 @@
 \titlespacing{\section}{0pt}{10pt}{10pt}
 
 %for publications
-\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[style=authoryear,sorting=ynt,maxbibnames=99]{biblatex}
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
@@ -131,309 +131,127 @@
 % non-numbered pages
 \pagestyle{empty} 
 
-%-----------------------------------------------------------------------%
-% Rendered CV template (customized for Moises Mata)
-% Based on user-provided template and entries
-%-----------------------------------------------------------------------%
-\documentclass[10pt,letterpaper]{article}
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
 
-% Packages:
-\usepackage[
-    ignoreheadfoot,
-    top=2cm,
-    bottom=2cm,
-    left=2cm,
-    right=2cm,
-    footskip=1.0cm
-]{geometry}
-\usepackage{titlesec}
-\usepackage{tabularx}
-\usepackage{array}
-\usepackage[dvipsnames]{xcolor}
-\definecolor{primaryColor}{RGB}{0,0,0}
-\usepackage{enumitem}
-\usepackage{fontawesome5}
-\usepackage{amsmath}
-\usepackage[
-    pdftitle={Moises Mata's CV},
-    pdfauthor={Moises Mata},
-    pdfcreator={LaTeX with RenderCV},
-    colorlinks=true,
-    urlcolor=primaryColor
-]{hyperref}
-\usepackage[pscoord]{eso-pic}
-\usepackage{calc}
-\usepackage{bookmark}
-\usepackage{lastpage}
-\usepackage{changepage}
-\usepackage{paracol}
-\usepackage{ifthen}
-\usepackage{needspace}
-\usepackage{iftex}
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
 
-% Ensure machine readable PDF when using PDFLaTeX
-\ifPDFTeX
-    \input{glyphtounicode}
-    \pdfgentounicode=1
-    \usepackage[T1]{fontenc}
-    \usepackage[utf8]{inputenc}
-    \usepackage{lmodern}
-\fi
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Moises Mata} \\[7.5pt]
+\href{https://github.com/moisesmata}{\raisebox{-0.05\height}\faGithub\ moisesmata} \ $|$ \ 
+\href{https://linkedin.com/in/moises-mata-t}{\raisebox{-0.05\height}\faLinkedin\ moisesmata} \ $|$ \ 
+\href{https://moises-mata.com}{\raisebox{-0.05\height}\faGlobe \ moises-mata.com} \ $|$ \ 
+\href{mailto:mm6155@columbia.edu}{\raisebox{-0.05\height}\faEnvelope \ mm6155@columbia.edu} \ $|$ \ 
+\href{tel:+19496150283}{\raisebox{-0.05\height}\faMobile \ +1 949 615 0283} \\
+\end{tabularx}
 
-\usepackage{charter}
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
 
-% Layout tweaks
-\raggedright
-\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
-\pagestyle{empty}
-\setcounter{secnumdepth}{0}
-\setlength{\parindent}{0pt}
-\setlength{\topskip}{0pt}
-\setlength{\columnsep}{0.15cm}
-\pagenumbering{gobble}
+%Interests/ Keywords/ Summary
+\section{Summary}
+Undergraduate student at Columbia University studying Computer Science and Applied Mathematics. Interested in embedded systems, flight software, robotics, and scientific visualization. Current and past research and internship experience at Columbia, JPL, and Barnard labs.
 
-	itleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
-	itlespacing{\section}{-1pt}{0.1cm}{0.15cm}
+%Experience
+\section{Research \& Work Experience}
 
-\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
-\newenvironment{highlights}{%
-    \begin{itemize}[
-        topsep=0.10cm,
-        parsep=0.10cm,
-        partopsep=0pt,
-        itemsep=0pt,
-        leftmargin=0cm + 10pt
-    ]
-}{\end{itemize}}
+\begin{joblong}{Research Assistant, Barnard Accessible and Accelerated Robotics Lab -- New York, NY}{Sept 2024 -- Present}
+\item Currently working on TinyMPC, an open-source convex model-predictive control solver designed for resource-constrained platforms. Advising professor: Brian Plancher.
+\item Debugging hardware and modernizing the TinyMPC codebase to integrate on-board motion capture systems.
+\item Tools Used: C, Model Predictive Control, Computer Vision
+\end{joblong}
 
-\newenvironment{highlightsforbulletentries}{%
-    \begin{itemize}[
-        topsep=0.10cm,
-        parsep=0.10cm,
-        partopsep=0pt,
-        itemsep=0pt,
-        leftmargin=10pt
-    ]
-}{\end{itemize}}
+\begin{joblong}{Research Assistant, Columbia CGUI Lab}{Aug 2024 -- Present}
+\item Undergrad lab assistant working on VISER (Visualizing Ice Sheets in Extended Reality), a collaborative VR framework to help climate scientists visualize ice sheet data.
+\item Implementing scientific collaboration in VR using Unity Photon and developing a long-term testing framework to study binary behavior under continuous multi-day runtime.
+\item Tools Used: Unity Game Engine, Photon Unity Networking, C#
+\end{joblong}
 
-\newenvironment{onecolentry}{%
-    \begin{adjustwidth}{0cm + 0.00001cm}{0cm + 0.00001cm}
-}{\end{adjustwidth}}
+\begin{joblong}{Grading Teaching Assistant, Columbia Physics Department -- New York, NY}{Sept 2024 -- Dec 2024}
+\item Grading TA for Columbia's advanced introduction to mechanics course (PHYS 1601).
+\end{joblong}
 
-% two/three column entry helpers (kept minimal)
-\newenvironment{twocolentry}[2][]{
-    \onecolentry
-    \def\secondColumn{#2}
-    \setcolumnwidth{\fill, 4.5cm}
-    \begin{paracol}{2}
-}{
-    \switchcolumn \raggedleft \secondColumn
-    \end{paracol}
-    \endonecolentry
-}
+\begin{joblong}{Undergraduate Research Fellow, NASA Jet Propulsion Laboratory -- Pasadena, CA}{May 2024 -- Aug 2024}
+\item Conducted a project culminating in training binary classification models on simulated observational data and applying them to multi-planet systems observed by Kepler to predict the presence of habitable planets.
+\item Supervised by Dr. Yasuhiro Hasegawa as part of JPL/Caltech's Summer Undergraduate Research Fellowship. (Publication in progress)
+\item Tools Used: Jupyter Notebook, Python, scikit-learn
+\end{joblong}
 
-\newenvironment{threecolentry}[3][]{
-    \onecolentry
-    \def\thirdColumn{#3}
-    \setcolumnwidth{, \fill, 4.5cm}
-    \begin{paracol}{3}
-    {\raggedright #2} \switchcolumn
-}{
-    \switchcolumn \raggedleft \thirdColumn
-    \end{paracol}
-    \endonecolentry
-}
+\begin{joblong}{Intern, Flight Software Engineering, NASA Jet Propulsion Laboratory -- Pasadena, CA}{May 2025 -- Aug 2025}
+\item Contributed infrastructural work to the F\textsuperscript{\'{}} flight software framework.
+\item Introduced architectural changes enabling projects to use prebuilt flight software stacks (Communications, Command and Data Handling, Filesystem Support).
+\end{joblong}
 
-\newenvironment{header}{%
-    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
-}{\par\kern\topsep}
+\begin{joblong}{Undergraduate Researcher, Columbia Astronomy -- New York, NY}{Dec 2022 -- Jul 2023}
+\item Worked with Professor Kathryn Johnston on the study of Milky Way stellar streams using Gaia and Pan-STARRS data.
+\item Analyzed the substructure of the Ophiuchus stream and created simulations to postulate initial conditions of its formation.
+\end{joblong}
 
-\newcommand{\placelastupdatedtext}{%
-  \AddToShipoutPictureFG*{%
-    \put(\LenToUnit{\paperwidth-2cm-0cm+0.05cm},\LenToUnit{\paperheight-1.0cm}){\vtop{{\null}\makebox[0pt][c]{\small\color{gray}\textit{Last updated: July 2024}}}}%
-  }%
-}%
+\begin{joblong}{Tutor, Calculus I and Digital Systems, Columbia Center for Student Advising -- New York, NY}{Sept 2023 -- Present}
+\item Tutor for Calculus I and Fundamentals of Computer Systems (CSEE 3827); tracked student progress and prepared targeted material for class and exams.
+\end{joblong}
+  
+%Projects
+\section{Extracurricular Experience}
 
-% keep original href behavior for inline links
-\let\hrefWithoutArrow\href
+\begin{joblong}{Executive Board, Co-President, Columbia Space Initiative -- New York, NY}{Feb 2025 -- Present}
+\item Elected to CSI's Executive Board by the student body (250+ members).
+\item As Co-President, organize main events, lead the admin team, and coordinate the club's direction.
+\end{joblong}
 
-\begin{document}
-    \newcommand{\AND}{\unskip\cleaders\copy\ANDbox\hskip\wd\ANDbox\ignorespaces}
-    \newsavebox\ANDbox
-    \sbox\ANDbox{$|$}
+\begin{joblong}{CubeSat Flight Software Co-Lead, Columbia Space Initiative -- New York, NY}{Aug 2024 -- Present}
+\item Part of CSI's CubeSat leadership team; the organization was awarded a CubeSat launch opportunity by NASA CSLI (launch in 2026--2027).
+\item Leading development of flight software for a smaller-scale mission launching in 2025; structuring weekly meetings and on-boarding sessions for new members.
+\item Tools Used: C++, F Prime (NASA-JPL Flight Software Framework), CircuitPython
+\end{joblong}
 
-    \begin{header}
-        \fontsize{15pt}{15pt}\selectfont Moises Mata
+\begin{joblong}{Executive Board, Treasurer, Columbia Space Initiative -- New York, NY}{Apr 2024 -- Present}
+\item Manage mission budgets, place orders for parts, and coordinate finances with Mechanical Engineering for budgeting.
+\end{joblong}
 
-        \normalsize
-        \kern 2.0pt
-        \mbox{\hrefWithoutArrow{mailto:mm6155@columbia.edu}{mm6155@columbia.edu}}%
-        \kern 2.0pt
-        \AND
-        \kern 2.0pt
-        \mbox{\hrefWithoutArrow{tel:+1-949-615-0283}{+1 949 615 0283}}%
-        \kern 2.0pt
-        \AND
-        \kern 2.0pt
-        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/moises-mata-cu/}{LinkedIn}}%
-        \kern 2.0pt
-    \end{header}
+\begin{joblong}{NASA SUITS Mission Co-Lead, Columbia Space Initiative -- New York, NY}{Sept 2023 -- Jul 2024}
+\item Mission Lead for CSI's SUITS Team. Helped develop an AR user interface for astronaut assistance.
+\item Co-authored a proposal that became one of 17 national finalists and led development/test activities at NASA Johnson Space Center.
+\item Led triweekly meetings, taught Unity and C# to team members, and oversaw proposal and application development.
+\item Tools Used: Unity, C#
+\end{joblong}
 
-    % Education
-    \section{Education}
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Sept 2022 -- May 2026 & Columbia University, BA in Computer Science and Applied Mathematics \hfill \textbf{GPA: 3.71} \\
+\multicolumn{2}{@{}X@{}}{\textbf{Current Coursework:} Embedded System Design; Classical Control Systems; Machine Learning for Robotics; Introduction to Databases; Dynamical Systems} \\
+\multicolumn{2}{@{}X@{}}{\textbf{Past Coursework:} Operating Systems; Analysis and Optimization; Unix Systems Programming; Parallel Optimization for Robotics; Applied Robotics Software; Ordinary and Partial Differential Equations} \\
+\end{tabularx}
 
-        \begin{twocolentry}{\textit{Sept 2022 -- May 2026}}
-            	extbf{Columbia University}, BA in Computer Science and Applied Mathematics\end{twocolentry}
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\begin{refsection}[citations.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
 
-        \begin{onecolentry}
-            \begin{highlights}
-                \item GPA: 3.71
-                \item \textbf{Current Coursework:} Embedded System Design, Classical Control Systems, Machine Learning for Robotics, Introduction to Databases, Dynamical Systems
-                \item \textbf{Past Coursework:} Operating Systems, Analysis and Optimization, Unix Systems Programming, Parallel Optimization for Robotics, Applied Robotics Software, Ordinary and Partial Differential Equations
-            \end{highlights}
-        \end{onecolentry}
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Programming & \normalsize{C, C++, C\#, Python, CircuitPython, MATLAB}\\
+Tools & \normalsize{F\textsuperscript{\'{}}/F Prime, Unity, Photon Unity Networking, scikit-learn, Jupyter}\\
+Domains & \normalsize{Embedded Systems, Flight Software, Model Predictive Control, Computer Vision, Robotics}\\
+\end{tabularx}
 
-    \section{Research and Work Experience}
+\vfill
+\center{\footnotesize Last updated: \today}
 
-        % Barnard Accessible and Accelerated Robotics Lab
-        \begin{twocolentry}{\textit{Sept 2024 -- Present}}
-            	extbf{Research Assistant}, \textit{Barnard Accessible and Accelerated Robotics Lab -- New York, NY}\end{twocolentry}
-
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Currently working on TinyMPC, an open-source convex model-predictive control solver suitable for resource-constrained platforms, advised by Professor Brian Plancher.
-                \item Debugging hardware and modernizing the TinyMPC codebase to work with on-board motion capture.
-                \item Tools Used: C, Model Predictive Control, Computer Vision
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.2cm}
-
-        % Grading TA
-        \begin{twocolentry}{\textit{Sept 2024 -- Dec 2024}}
-            	extbf{Grading Teaching Assistant}, \textit{Columbia Physics Department -- New York, NY}\end{twocolentry}
-
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Grading TA for Columbia's advanced introduction to mechanics (PHYS 1601).
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.2cm}
-
-        % JPL - 2024 research
-        \begin{twocolentry}{\textit{May 2024 -- Aug 2024}}
-            	extbf{Undergraduate Research Fellow}, \textit{NASA Jet Propulsion Laboratory -- Pasadena, CA}\end{twocolentry}
-
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Conducted a project culminating in training binary classification models on simulated observational data and applying them to multi-planet systems observed by Kepler to predict habitable planets.
-                \item Worked under the supervision of Dr. Yasuhiro Hasegawa as part of JPL/Caltech's Summer Undergraduate Research Fellowship (publication in progress).
-                \item Tools Used: Jupyter Notebook, Python, scikit-learn
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.2cm}
-
-        % --- New requested JPL Intern 2025 entry ---
-        \begin{twocolentry}{\textit{May 2025 -- Aug 2025}}
-            	extbf{Intern, Flight Software Engineering}, \textit{NASA Jet Propulsion Laboratory -- Pasadena, CA}\end{twocolentry}
-
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Contributed infrastructural work to the F\' (F-prime) flight software framework.
-                \item Introduced architectural changes enabling projects to use prebuilt FSW stacks (Communications, Command and Data Handling, Filesystem Support).
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.2cm}
-
-        % Research Assistant at Columbia CGUI Lab (new requested)
-        \begin{twocolentry}{\textit{Aug 2024 -- Present}}
-            	extbf{Research Assistant}, \textit{Columbia Computer Graphics and User Interface (CGUI) Lab -- New York, NY}\end{twocolentry}
-
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Undergraduate lab assistant working on VISER (Visualizing Ice Sheets in Extended Reality), a collaborative VR framework to help climate scientists visualize ice-sheet data.
-                \item Implementing scientific collaboration in VR using Unity and Photon.
-                \item Tools Used: Unity Game Engine, Photon Unity Networking, C#.
-                \item Developed a long-term testing framework to study binary behavior under continuous multi-day runtime.
-            \end{highlights}
-        \end{onecolentry}
-
-    \section{Extracurricular Experience}
-
-        \begin{twocolentry}{\textit{February 2025 -- Present}}
-            	extbf{Executive Board, Co-President}, \textit{Columbia Space Initiative -- New York, NY}\end{twocolentry}
-
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Elected to Columbia Space Initiative's Executive Board by the club's student body of over 250 members.
-                \item As Co-President, organize main events, lead the admin team, and coordinate the club's direction.
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.15cm}
-
-        \begin{twocolentry}{\textit{Aug 2024 -- Present}}
-            	extbf{CubeSat Flight Software Co-Lead}, \textit{Columbia Space Initiative -- New York, NY}\end{twocolentry}
-
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Part of CSI's CubeSat leadership team; awarded a CubeSat launch opportunity by NASA CSLI (launch targeted 2026--2027).
-                \item Leading development of flight software for a smaller mission launching in 2025; structuring meetings and onboarding materials.
-                \item Tools Used: C++, F Prime (NASA-JPL Flight Software Framework), CircuitPython.
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.15cm}
-
-        \begin{twocolentry}{\textit{Apr 2024 -- Present}}
-            	extbf{Executive Board, Treasurer}, \textit{Columbia Space Initiative -- New York, NY}\end{twocolentry}
-
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Manage mission budgets, orders for parts, and coordinate with departments for budget planning.
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.15cm}
-
-        \begin{twocolentry}{\textit{Sept 2023 -- July 2024}}
-            	extbf{NASA SUITS Mission Co-Lead}, \textit{Columbia Space Initiative -- New York, NY}\end{twocolentry}
-
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Mission lead for CSI's SUITS Team developing an AR UI for astronaut assistance; proposal reached national finalist stage and on-site testing at NASA Johnson Space Center.
-                \item Led meetings, taught Unity and C# to team members.
-                \item Tools Used: Unity, C#.
-            \end{highlights}
-        \end{onecolentry}
-
-    \section{Additional Experience}
-
-        \begin{twocolentry}{\textit{Sept 2023 -- Present}}
-            	extbf{Tutor: Calculus I and Digital Systems}, \textit{Columbia Center for Student Advising -- New York, NY}\end{twocolentry}
-
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Calculus I and Computer Systems (CSEE 3827 - Fundamentals of Computer Systems) tutor for Columbia undergraduates.
-                \item Track students' progress and design study plans to prepare for class material and tests.
-            \end{highlights}
-        \end{onecolentry}
-
-        \vspace{0.15cm}
-
-        \begin{twocolentry}{\textit{Dec 2022 -- July 2023}}
-            	extbf{Undergraduate Researcher}, \textit{Columbia Astronomy -- New York, NY}\end{twocolentry}
-
-        \begin{onecolentry}
-            \begin{highlights}
-                \item Worked with Professor Kathryn Johnston on Milky Way stellar streams using Gaia and Pan-STARRS survey data.
-                \item Analyzed substructure of the Ophiuchus stream and created simulations to investigate formation scenarios.
-            \end{highlights}
-        \end{onecolentry}
-
-    \vfill
-    \center{\footnotesize Last updated: \today}
 \end{document}

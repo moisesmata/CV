@@ -1,0 +1,96 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{1}
+  \datalist[entry]{ynt/global//global/global/global}
+    \entry{mahajan2025codegenerationconicconstraints}{misc}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=1afb8d0030f68beba831499dabcc3722}{%
+           family={Mahajan},
+           familyi={M\bibinitperiod},
+           given={Ishaan},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=615ca2a5cde06e91bf7b720a930f34f9}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Khai},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b0bed3d11cbe9af34091a647a5b9b5f6}{%
+           family={Schoedel},
+           familyi={S\bibinitperiod},
+           given={Sam},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ad349e9713327b82fccd01b62b77ad9c}{%
+           family={Nedumaran},
+           familyi={N\bibinitperiod},
+           given={Elakhya},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=30e54af0419d1e2b917dd594768c405f}{%
+           family={{\textbf{Moises Mata}}},
+           familyi={M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=c681d8e35ad5e73bead9c4017d062def}{%
+           family={Plancher},
+           familyi={P\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=80368904822b04c7e38316bb5a9dfd29}{%
+           family={Manchester},
+           familyi={M\bibinitperiod},
+           given={Zachary},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{978195345a4bb9f9b9ce4efaa537b4c8}
+      \strng{fullhash}{266e5b994060c5a93f47682c633a7dd9}
+      \strng{fullhashraw}{266e5b994060c5a93f47682c633a7dd9}
+      \strng{bibnamehash}{266e5b994060c5a93f47682c633a7dd9}
+      \strng{authorbibnamehash}{266e5b994060c5a93f47682c633a7dd9}
+      \strng{authornamehash}{978195345a4bb9f9b9ce4efaa537b4c8}
+      \strng{authorfullhash}{266e5b994060c5a93f47682c633a7dd9}
+      \strng{authorfullhashraw}{266e5b994060c5a93f47682c633a7dd9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.RO}
+      \field{eprinttype}{arXiv}
+      \field{title}{Code Generation and Conic Constraints for Model-Predictive Control on Microcontrollers with Conic-TinyMPC}
+      \field{year}{2025}
+      \true{nocite}
+      \verb{eprint}
+      \verb 2403.18149
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2403.18149
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2403.18149
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

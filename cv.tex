@@ -108,11 +108,21 @@
     {
     }
 
-\newenvironment{joblong}[2]
+\newenvironment{joblong}[4]
     {
-    \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
-    \end{tabularx}
+    \noindent\textbf{#1} \dotfill #2 \\
+    \noindent #3 \dotfill #4 \\[3.75pt]
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+\newenvironment{joblongsameorg}[2]
+    {
+    \noindent #1 \dotfill #2 \\[3.75pt]
     \begin{minipage}[t]{\linewidth}
     \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
     }
@@ -146,91 +156,80 @@
 \href{https://github.com/moisesmata}{\raisebox{-0.05\height}\faGithub\ moisesmata} \ $|$ \ 
 \href{https://linkedin.com/in/moises-mata-t}{\raisebox{-0.05\height}\faLinkedin\ moisesmata} \ $|$ \ 
 \href{https://moises-mata.com}{\raisebox{-0.05\height}\faGlobe \ moises-mata.com} \ $|$ \ 
-\href{mailto:mm6155@columbia.edu}{\raisebox{-0.05\height}\faEnvelope \ mm6155@columbia.edu} \ $|$ \ 
-\href{tel:+19496150283}{\raisebox{-0.05\height}\faMobile \ +1 949 615 0283} \\
+\href{mailto:mm6155@columbia.edu}{\raisebox{-0.05\height}\faEnvelope \ mm6155@columbia.edu} \\
 \end{tabularx}
-
-%----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
-%----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
-\section{Summary}
-Undergraduate student at Columbia University studying Computer Science and Applied Mathematics. Interested in embedded systems, flight software, robotics, and scientific visualization. Current and past research and internship experience at Columbia, JPL, and Barnard labs.
-
-%Experience
-\section{Research \& Work Experience}
-
-\begin{joblong}{Research Assistant, Barnard Accessible and Accelerated Robotics Lab -- New York, NY}{Sept 2024 -- Present}
-\item Currently working on TinyMPC, an open-source convex model-predictive control solver designed for resource-constrained platforms. Advising professor: Brian Plancher.
-\item Debugging hardware and modernizing the TinyMPC codebase to integrate on-board motion capture systems.
-\item Tools Used: C, Model Predictive Control, Computer Vision
-\end{joblong}
-
-\begin{joblong}{Research Assistant, Columbia CGUI Lab}{Aug 2024 -- Present}
-\item Undergrad lab assistant working on VISER (Visualizing Ice Sheets in Extended Reality), a collaborative VR framework to help climate scientists visualize ice sheet data.
-\item Implementing scientific collaboration in VR using Unity Photon and developing a long-term testing framework to study binary behavior under continuous multi-day runtime.
-\item Tools Used: Unity Game Engine, Photon Unity Networking, C\#
-\end{joblong}
-
-\begin{joblong}{Grading Teaching Assistant, Columbia Physics Department -- New York, NY}{Sept 2024 -- Dec 2024}
-\item Grading TA for Columbia's advanced introduction to mechanics course (PHYS 1601).
-\end{joblong}
-
-\begin{joblong}{Undergraduate Research Fellow, NASA Jet Propulsion Laboratory -- Pasadena, CA}{May 2024 -- Aug 2024}
-\item Conducted a project culminating in training binary classification models on simulated observational data and applying them to multi-planet systems observed by Kepler to predict the presence of habitable planets.
-\item Supervised by Dr. Yasuhiro Hasegawa as part of JPL/Caltech's Summer Undergraduate Research Fellowship. (Publication in progress)
-\item Tools Used: Jupyter Notebook, Python, scikit-learn
-\end{joblong}
-
-\begin{joblong}{Intern, Flight Software Engineering, NASA Jet Propulsion Laboratory -- Pasadena, CA}{May 2025 -- Aug 2025}
-\item Contributed infrastructural work to the F\textsuperscript{\'{}} flight software framework.
-\item Introduced architectural changes enabling projects to use prebuilt flight software stacks (Communications, Command and Data Handling, Filesystem Support).
-\end{joblong}
-
-\begin{joblong}{Undergraduate Researcher, Columbia Astronomy -- New York, NY}{Dec 2022 -- Jul 2023}
-\item Worked with Professor Kathryn Johnston on the study of Milky Way stellar streams using Gaia and Pan-STARRS data.
-\item Analyzed the substructure of the Ophiuchus stream and created simulations to postulate initial conditions of its formation.
-\end{joblong}
-
-\begin{joblong}{Tutor, Calculus I and Digital Systems, Columbia Center for Student Advising -- New York, NY}{Sept 2023 -- Present}
-\item Tutor for Calculus I and Fundamentals of Computer Systems (CSEE 3827); tracked student progress and prepared targeted material for class and exams.
-\end{joblong}
-  
-%Projects
-\section{Extracurricular Experience}
-
-\begin{joblong}{Executive Board, Co-President, Columbia Space Initiative -- New York, NY}{Feb 2025 -- Present}
-\item Elected to CSI's Executive Board by the student body (250+ members).
-\item As Co-President, organize main events, lead the admin team, and coordinate the club's direction.
-\end{joblong}
-
-\begin{joblong}{CubeSat Flight Software Co-Lead, Columbia Space Initiative -- New York, NY}{Aug 2024 -- Present}
-\item Part of CSI's CubeSat leadership team; the organization was awarded a CubeSat launch opportunity by NASA CSLI (launch in 2026--2027).
-\item Leading development of flight software for a smaller-scale mission launching in 2025; structuring weekly meetings and on-boarding sessions for new members.
-\item Tools Used: C++, F Prime (NASA-JPL Flight Software Framework), CircuitPython
-\end{joblong}
-
-\begin{joblong}{Executive Board, Treasurer, Columbia Space Initiative -- New York, NY}{Apr 2024 -- Present}
-\item Manage mission budgets, place orders for parts, and coordinate finances with Mechanical Engineering for budgeting.
-\end{joblong}
-
-\begin{joblong}{NASA SUITS Mission Co-Lead, Columbia Space Initiative -- New York, NY}{Sept 2023 -- Jul 2024}
-\item Mission Lead for CSI's SUITS Team. Helped develop an AR user interface for astronaut assistance.
-\item Co-authored a proposal that became one of 17 national finalists and led development/test activities at NASA Johnson Space Center.
-\item Led triweekly meetings, taught Unity and C\# to team members, and oversaw proposal and application development.
-\item Tools Used: Unity, C\#
-\end{joblong}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-Sept 2022 -- May 2026 & Columbia University, BA in Computer Science and Applied Mathematics \hfill \textbf{GPA: 3.71} \\
-\multicolumn{2}{@{}X@{}}{\textbf{Current Coursework:} Embedded System Design; Classical Control Systems; Machine Learning for Robotics; Introduction to Databases; Dynamical Systems} \\
-\multicolumn{2}{@{}X@{}}{\textbf{Past Coursework:} Operating Systems; Analysis and Optimization; Unix Systems Programming; Parallel Optimization for Robotics; Applied Robotics Software; Ordinary and Partial Differential Equations} \\
-\end{tabularx}
+\noindent Columbia University, BA in Computer Science and Applied Mathematics \dotfill Sept 2022 -- May 2026 \\
+\noindent \textbf{GPA: 3.68}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Experience
+\section{Research \& Work Experience}
+
+\begin{joblong}{Barnard/Dartmouth Accessible and Accelerated Robotics Lab}{New York, NY}{Undergraduate Researcher}{Jan 2025 -- Present}
+\item Debugging hardware and modernizing codebase for \href{https://tinympc.org/}{TinyMPC}, an open-source convex Model Predictive Control solver designed for resource-constrained platforms. Advising professor: Brian Plancher.
+\item Extending TinyMPC solver to include Meta Learning capabilities, allowing robots to update their controller to be more optimal online.
+\end{joblong}
+
+\begin{joblong}{Columbia SNL Lab}{New York, NY}{Undergraduate Researcher}{Sept 2025 -- Present}
+\item Part of team working on a lightweight, high-assurance runtime for spacecraft flight software built on eBPF, enabling dynamic yet predictable execution of mission and payload logic under strict safety constraints.
+\item Responsible for using F Prime, eBPF, and C/C++ to meet realtime requirements by multithreading Duotronic VMs and implementing a miniature scheduler for real-time scheduling to satisfy millisecond rate-group deadlines with bounded execution time. (\textbf{Publication coming soon})
+\end{joblong}
+
+\begin{joblong}{NASA Jet Propulsion Lab, Small Scale Flight Software Group}{Pasadena, CA}{Intern, Flight Software Engineering}{May 2025 -- Aug 2025}
+\item Contributed infrastructural work to the \href{https://fprime.jpl.nasa.gov/}{F Prime} flight software framework (\href{https://github.com/nasa/fprime/releases/tag/v4.0.0}{v4.0.0 release}).
+\item Introduced architectural changes enabling projects to use prebuilt flight software stacks (Communications, Command and Data Handling, Filesystem Support).
+\end{joblong}
+
+\begin{joblong}{NASA Jet Propulsion Lab, Exoplanet Discovery \& Science}{Pasadena, CA}{Undergraduate Research Fellow}{May 2024 -- Aug 2024}
+\item Conducted a project using Python, scikit-learn, and Jupyter Notebooks, culminating in training binary classification models on simulated observational data and applying them to multi-planet systems observed by Kepler to predict the presence of habitable planets.
+\item Supervised by Dr. Yasuhiro Hasegawa as part of JPL/Caltech's Summer Undergraduate Research Fellowship. (\textbf{Publication coming soon})
+\end{joblong}
+
+\begin{joblong}{Columbia Center for Student Advising}{New York, NY}{Tutor, Calculus I and Digital Systems}{Sept 2023 -- Sept 2024}
+\item Tutor for Calculus I and Fundamentals of Computer Systems (CSEE 3827); tracked student progress and prepared targeted material for class and exams.
+\end{joblong}
+
+\begin{joblong}{Columbia Astronomy}{New York, NY}{Undergraduate Researcher}{Dec 2022 -- Jul 2023}
+\item Worked with Professor Kathryn Johnston on the study of Milky Way stellar streams using Gaia and Pan-STARRS data.
+\item Analyzed the substructure of the Ophiuchus stream and created simulations to postulate initial conditions of its formation.
+\end{joblong}
+  
+%----------------------------------------------------------------------------------------
+%	LEADERSHIP EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Leadership Experience}
+
+\begin{joblong}{Columbia Space Initiative}{New York, NY}{Executive Board, Co-President}{March 2025 -- Present}
+\item Elected to \href{https://columbiaspace.org/}{Columbia Space Initiative's} Executive Board by the student body (250+ members).
+\item As Co-President, organize main events, lead the admin team, and coordinate the club's direction.
+\end{joblong}
+
+\begin{joblong}{Columbia Space Initiative}{New York, NY}{Executive Board, Treasurer}{March 2024 -- March 2025}
+\item Manage mission budgets, place orders for parts, and coordinate finances with Mechanical Engineering for budgeting.
+\end{joblong}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Projects}
+
+\begin{joblong}{Columbia Space Initiative}{New York, NY}{Columbia Flight Software Lead, \href{https://docs.proveskit.space/en/latest/}{PROVES} Alcyone (LionCub)}{Aug 2024 -- Present}
+\item 1U CubeSat on a manifested launch for April 2026. Will be Columbia's first object in orbit, with a mission to take pictures of the Earth from space. Part of the larger PROVES project.
+\item Responsible for implementing vital functionality in the F Prime flight software framework: hardware watchdog checking, load switch management to control power management of sensors.
+\end{joblong}
+
+\begin{joblong}{Columbia Space Initiative}{New York, NY}{\href{https://www.nasa.gov/learning-resources/spacesuit-user-interface-technologies-for-students/}{NASA SUITS} Mission Co-Lead}{Sept 2023 -- Jul 2024}
+\item Mission Co-Lead for CSI's SUITS Team. Co-authored a proposal that became one of 17 national finalists. Led development and test activities at NASA Johnson Space Center.
+\item Developed an intuitive AR user interface for astronaut assistance using Unity and C\#. Delivered interface deployed on Microsoft HoloLens 2; testers successfully completed test Mars mission upon evaluation at Johnson Space Center.
+\end{joblong}
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
@@ -246,9 +245,10 @@ Sept 2022 -- May 2026 & Columbia University, BA in Computer Science and Applied 
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Programming & \normalsize{C, C++, C\#, Python, CircuitPython, MATLAB}\\
-Tools & \normalsize{F\textsuperscript{\'{}}/F Prime, Unity, Photon Unity Networking, scikit-learn, Jupyter}\\
-Domains & \normalsize{Embedded Systems, Flight Software, Model Predictive Control, Computer Vision, Robotics}\\
+Programming & \normalsize{C, C++, C\#, Python, CircuitPython, MATLAB, F\textsuperscript{\'{}}/F Prime, Unity, scikit-learn, Jupyter}\\
+Domains & \normalsize{Robotic Optimization and Control, Embedded Systems, Flight Software}\\
+Languages & \normalsize{English, Spanish (native proficiency), French (limited)}\\
+Certifications & \normalsize{Amateur Radio (Technician Class)}\\
 \end{tabularx}
 
 \vfill

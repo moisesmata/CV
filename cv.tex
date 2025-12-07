@@ -163,8 +163,15 @@
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\noindent Columbia University, BA in Computer Science and Applied Mathematics \dotfill Sept 2022 -- May 2026 \\
-\noindent \textbf{GPA: 3.68}
+\noindent Columbia University, BA in Computer Science and Applied Mathematics \dotfill Sept 2022 -- May 2026
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\begin{refsection}[citations.bib]
+\nocite{*}
+\printbibliography[heading=none]
+\end{refsection}
 
 %----------------------------------------------------------------------------------------
 % EXPERIENCE SECTIONS
@@ -174,23 +181,22 @@
 \section{Research \& Work Experience}
 
 \begin{joblong}{Barnard/Dartmouth Accessible and Accelerated Robotics Lab}{New York, NY}{Undergraduate Researcher}{Jan 2025 -- Present}
-\item Debugging hardware and modernizing codebase for \href{https://tinympc.org/}{TinyMPC}, an open-source convex Model Predictive Control solver designed for resource-constrained platforms. Advising professor: Brian Plancher.
-\item Extending TinyMPC solver to include Meta Learning capabilities, allowing robots to update their controller to be more optimal online.
+\item Diagnosing hardware constraints and modernizing the \textbf{C++} codebase for \href{https://tinympc.org/}{TinyMPC}, an open-source convex Model Predictive Control solver designed for resource-constrained platforms. Advising professor: Brian Plancher.
+\item Implementing \textbf{meta-learning} algorithms to enable online controller optimization and adaptation across systems with different dynamics.
 \end{joblong}
 
 \begin{joblong}{Columbia SNL Lab}{New York, NY}{Undergraduate Researcher}{Sept 2025 -- Present}
-\item Part of team working on a lightweight, high-assurance runtime for spacecraft flight software built on eBPF, enabling dynamic yet predictable execution of mission and payload logic under strict safety constraints. Advising professor: Junfeng Yang. 
-\item Responsible for using F Prime, eBPF, and C/C++ to meet realtime requirements by multithreading Duotronic VMs and implementing a miniature scheduler for real-time scheduling to satisfy millisecond rate-group deadlines with bounded execution time. (\textbf{Publication coming soon})
+\item Developing a high-assurance, real-time runtime for spacecraft flight software using \textbf{eBPF}, \textbf{F Prime}, and \textbf{C/C++}, enabling dynamic multithreaded execution of mission logic with strict safety and millisecond deadline guarantees. (\textbf{Publication In Progress}, advisor: Junfeng Yang)
 \end{joblong}
 
 \begin{joblong}{NASA Jet Propulsion Lab, Small Scale Flight Software Group}{Pasadena, CA}{Intern, Flight Software Engineering}{May 2025 -- Aug 2025}
-\item Contributed infrastructural work to the \href{https://fprime.jpl.nasa.gov/}{F Prime} flight software framework (\href{https://github.com/nasa/fprime/releases/tag/v4.0.0}{v4.0.0 release}).
-\item Introduced architectural changes enabling projects to use prebuilt flight software stacks (Communications, Command and Data Handling, Filesystem Support).
+\item Developed core infrastructure for the \href{https://fprime.jpl.nasa.gov/}{F Prime} flight software framework (\href{https://github.com/nasa/fprime/releases/tag/v4.0.0}{v4.0.0 release}).
+\item Architected and implemented reusable software stacks (Communications, Command and Data Handling, Filesystem Support, Data Products), reducing setup time for new missions.
 \end{joblong}
 
 \begin{joblong}{NASA Jet Propulsion Lab, Exoplanet Discovery \& Science}{Pasadena, CA}{Undergraduate Research Fellow}{May 2024 -- Aug 2024}
-\item Conducted a project using Python, scikit-learn, and Jupyter Notebooks, culminating in training binary classification models on simulated observational data and applying them to multi-planet systems observed by Kepler to predict the presence of habitable planets.
-\item Supervised by Dr. Yasuhiro Hasegawa as part of JPL/Caltech's Summer Undergraduate Research Fellowship. (\textbf{Publication coming soon})
+\item Trained binary classification models using \textbf{Python}, \textbf{scikit-learn}, within \textbf{Jupyter Notebook} to predict the presence of habitable planets from simulated observational data.
+\item Collaborated with Dr. Yasuhiro Hasegawa to apply models to Kepler multi-planet systems. (\textbf{Publication In Progress})
 \end{joblong}
 
 \begin{joblong}{Columbia Center for Student Advising}{New York, NY}{Tutor, Calculus I and Digital Systems}{Sept 2023 -- Sept 2024}
@@ -198,22 +204,23 @@
 \end{joblong}
 
 \begin{joblong}{Columbia Astronomy}{New York, NY}{Undergraduate Researcher}{Dec 2022 -- Jul 2023}
-\item Worked with Professor Kathryn Johnston on the study of Milky Way stellar streams using Gaia and Pan-STARRS data.
-\item Analyzed the substructure of the Ophiuchus stream and created simulations to postulate initial conditions of its formation.
+\item Collaborated with Professor Kathryn Johnston to study Milky Way stellar streams using \textbf{Gaia} and \textbf{Pan-STARRS} data.
+\item Analyzed the substructure of the Ophiuchus stream and simulated initial formation conditions.
 \end{joblong}
-  
+
 %----------------------------------------------------------------------------------------
 %	LEADERSHIP EXPERIENCE
 %----------------------------------------------------------------------------------------
 \section{Leadership Experience}
 
 \begin{joblong}{Columbia Space Initiative}{New York, NY}{Executive Board, Co-President}{March 2025 -- Present}
-\item Elected to \href{https://columbiaspace.org/}{Columbia Space Initiative's} Executive Board by the student body (250+ members).
-\item As Co-President, organize main events, lead the admin team, and coordinate the club's direction.
+\item Leading \textbf{Columbia's largest engineering club} (\textbf{250+ active members}, \textbf{\$200k annual budget}) as \textbf{Co-President}, coordinating strategy across \textbf{13 active projects} and managing overall budget allocation.
+\item Organizing major events including company visits, faculty talks, and astronaut visits, engaging Columbia and the broader NYC community in aerospace.
+\item Conducting career development workshops (resume/CV, internships) for Columbia's undergraduate engineering population and leading external outreach to \textbf{1000+ middle and high school students}, primarily translating engineering concepts into Spanish to inspire underrepresented demographics.
 \end{joblong}
 
 \begin{joblong}{Columbia Space Initiative}{New York, NY}{Executive Board, Treasurer}{March 2024 -- March 2025}
-\item Manage mission budgets, place orders for parts, and coordinate finances with Mechanical Engineering for budgeting.
+\item Administered and operated the club's \textbf{\$200k annual budget}, managing procurement, orders, and financial coordination across \textbf{13 projects} and the Mechanical Engineering department.
 \end{joblong}
 
 %----------------------------------------------------------------------------------------
@@ -222,23 +229,15 @@
 \section{Projects}
 
 \begin{joblong}{Columbia Space Initiative}{New York, NY}{Columbia Flight Software Lead, \href{https://docs.proveskit.space/en/latest/}{PROVES} Alcyone (LionCub)}{Aug 2024 -- Present}
-\item 1U CubeSat on a manifested launch for April 2026. Will be Columbia's first object in orbit, with a mission to take pictures of the Earth from space. Part of the larger PROVES project.
-\item Responsible for implementing vital functionality in the F Prime flight software framework: hardware watchdog checking, load switch management to control power management of sensors.
+\item 1U CubeSat on a manifested launch for April 2026. Will be \textbf{Columbia's first satellite}, with a mission to take pictures of the Earth from space. Part of the larger PROVES project.
+\item Implemented critical \textbf{F Prime} components including hardware watchdog and power load switch management. Developed camera control software with \textbf{UART} communication for image capture and onboard storage, enabling Columbia's first satellite imaging capabilities.
+\item Mentored younger members on flight software concepts and best practices.
 \end{joblong}
 
 \begin{joblong}{Columbia Space Initiative}{New York, NY}{\href{https://www.nasa.gov/learning-resources/spacesuit-user-interface-technologies-for-students/}{NASA SUITS} Mission Co-Lead}{Sept 2023 -- Jul 2024}
-\item Mission Co-Lead for CSI's SUITS Team. Co-authored a proposal that became one of 17 national finalists. Led development and test activities at NASA Johnson Space Center.
-\item Developed an intuitive AR user interface for astronaut assistance using Unity and C\#. Delivered interface deployed on Microsoft HoloLens 2; testers successfully completed test Mars mission upon evaluation at Johnson Space Center.
+\item Co-authored a proposal selected as one of \textbf{17 national finalists} and led testing activities at \textbf{NASA Johnson Space Center}.
+\item Developed an AR interface in \textbf{Unity} (\textbf{C\#}) for astronaut assistance, deployed on \textbf{Microsoft HoloLens 2}. Testers successfully completed a simulated Mars mission on-site.
 \end{joblong}
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS

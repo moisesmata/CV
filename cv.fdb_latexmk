@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber cv"] 1764823560.30823 "cv.bcf" "cv.bbl" "cv" 1765140769.11659 0
+["biber cv"] 1764823560.30823 "cv.bcf" "cv.bbl" "cv" 1765746439.13205 0
   "citations.bib" 1764823558.71668 534 681df205a51e69ea138f2634623237e1 ""
-  "cv.bcf" 1765140769.02237 108859 11fb663bd9e9e0a682370ee69032dbe1 "pdflatex"
+  "cv.bcf" 1765746439.07326 108859 11fb663bd9e9e0a682370ee69032dbe1 "pdflatex"
   (generated)
   "cv.bbl"
   "cv.blg"
   (rewritten before read)
-["pdflatex"] 1765140768.00841 "cv.tex" "cv.pdf" "cv" 1765140769.11705 0
+["pdflatex"] 1765746438.53257 "cv.tex" "cv.pdf" "cv" 1765746439.13254 0
   "/opt/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1764627195 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/opt/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1764627195 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/opt/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1764627195 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
@@ -33,7 +33,6 @@
   "/opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1764627195 35752 024fb6c41858982481f6968b5fc26508 ""
   "/opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1764627195 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1764627195 32362 179c33bbf43f19adbb3825bb4e36e57a ""
-  "/opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1764627195 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1764627195 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1764627195 36118 fad905eba93cff5bce1e185fe980a177 ""
   "/opt/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1764627195 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
@@ -116,11 +115,11 @@
   "/opt/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1764627195 5541365 9e7a44f31376668d703f0a03d64f70d6 ""
   "/opt/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1764627195 3636260 73f6b0f267c197b5b787082c875842f9 ""
   "/opt/texlive/2025/texmf.cnf" 1764627195 585 81f10441804f05cc9107aafbbb0bcd23 ""
-  "cv.aux" 1765140769.01937 1174 413c95c25f32a8356104ad744a5dbb1d "pdflatex"
+  "cv.aux" 1765746439.07215 1174 413c95c25f32a8356104ad744a5dbb1d "pdflatex"
   "cv.bbl" 1764823562.8865 3445 53e4012dea98887554844deffa40735c "biber cv"
-  "cv.out" 1765140769.02037 683 9b69a925da7845c13d1eb4bacc71a816 "pdflatex"
-  "cv.run.xml" 1765140769.02539 2296 b8f24f063b2e0944d4804aaf5bc774c7 "pdflatex"
-  "cv.tex" 1765140759.93758 12680 2a9541fafab1a2f977f86d19c82e9235 ""
+  "cv.out" 1765746439.07215 683 9b69a925da7845c13d1eb4bacc71a816 "pdflatex"
+  "cv.run.xml" 1765746439.07508 2296 b8f24f063b2e0944d4804aaf5bc774c7 "pdflatex"
+  "cv.tex" 1765746437.39903 12755 ca4b094d8c595d8b2a6357a7a9739f3d ""
   (generated)
   "cv.aux"
   "cv.bcf"

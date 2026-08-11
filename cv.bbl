@@ -19,7 +19,7 @@
 
 \refsection{1}
   \datalist[entry]{ynt/global//global/global/global}
-    \entry{mahajan2025codegenerationconicconstraints}{misc}{}{}
+    \entry{mahajan2026conictinympc}{inproceedings}{}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=1afb8d0030f68beba831499dabcc3722}{%
            family={Mahajan},
@@ -75,9 +75,9 @@
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Conference on Robotics and Automation (ICRA)}
       \field{eprintclass}{cs.RO}
       \field{eprinttype}{arXiv}
-      \field{note}{IEEE International Conference on Robotics and Automation (In Review)}
       \field{title}{Code Generation and Conic Constraints for Model-Predictive Control on Microcontrollers with Conic-TinyMPC}
       \field{year}{2026}
       \true{nocite}

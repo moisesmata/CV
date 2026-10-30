@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  11 AUG 2026 01:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.22)  30 OCT 2026 15:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -735,31 +735,31 @@ fd)
 )
 \blx@maxsegment@1=\count449
 \blx@sectionciteorder@1=\count450
-Package biblatex Info: Reference section=1 on input line 183.
-Package biblatex Info: Setting label 'refsection:1' on input line 183.
-Package biblatex Info: Reference section=0 on input line 186.
+Package biblatex Info: Reference section=1 on input line 182.
+Package biblatex Info: Setting label 'refsection:1' on input line 182.
+Package biblatex Info: Reference section=0 on input line 185.
 
-Underfull \hbox (badness 10000) in paragraph at lines 195--198
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--203
+Underfull \hbox (badness 10000) in paragraph at lines 194--197
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--207
+Underfull \hbox (badness 10000) in paragraph at lines 198--202
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--212
+Underfull \hbox (badness 10000) in paragraph at lines 203--206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--216
+Underfull \hbox (badness 10000) in paragraph at lines 207--211
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--215
 
  []
 
@@ -768,22 +768,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--216
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/usr/lo
 cal/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 222--227
+Underfull \hbox (badness 10000) in paragraph at lines 221--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--237
+Underfull \hbox (badness 10000) in paragraph at lines 232--236
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--241
+Underfull \hbox (badness 10000) in paragraph at lines 237--240
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 242--245
+Underfull \hbox (badness 10000) in paragraph at lines 241--244
 
  []
 
@@ -802,7 +802,7 @@ Package logreq Info: Writing requests to 'cv.run.xml'.
 Here is how much of TeX's memory you used:
  20999 strings out of 467525
  381464 string characters out of 5418982
- 1235391 words of memory out of 5000000
+ 1234391 words of memory out of 5000000
  49701 multiletter control sequences out of 15000+600000
  633447 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -819,7 +819,7 @@ public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/pub
 lic/cm-super/sfbx1200.pfb>
-Output written on cv.pdf (2 pages, 142602 bytes).
+Output written on cv.pdf (2 pages, 142007 bytes).
 PDF statistics:
  124 PDF objects out of 1000 (max. 8388607)
  93 compressed objects within 1 object stream
